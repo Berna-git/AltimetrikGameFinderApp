@@ -1,6 +1,5 @@
 /* === Import fonts ==== */
-@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@200;300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans&family=Poppins:wght@200;300&display=swap');
 /* Variables */
 :root {
    --primery-color: #5FE19B;
@@ -14,12 +13,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: 10px;
     
+}
+a {
+    text-decoration: none;
 }
 /* Sett font-size html */
 html {
     font-family:'Exo', sans-serif;
+    font-size: 10px;
 }
 /*========== Login  ======= */
 
@@ -46,6 +48,7 @@ html {
     display: grid;
     grid-template-rows: 6.3rem 70.2rem 18.2rem;
     grid-template-columns: 93.2rem 46.2rem 10rem;
+    justify-content: end;
 
 }
 
@@ -53,9 +56,9 @@ html {
 
 .main-register__structure {
     grid-area: 2 / 2 / 3 / 3;
-    width: 100%;
-    height: 100%;
-    background-color:rgba(48, 48, 48, 0.5);
+    width:462px;
+    height: 702px;
+    background-color: rgba(14, 14, 17, 0.5);
     background-blend-mode: overlay;
     backdrop-filter: blur(10px);
     border-radius: 12px;
@@ -65,24 +68,164 @@ html {
     font-weight: 700;
     font-size: 2rem;
     line-height: 2.7rem;  
-    font-style: normal;
     color: var(--textColor-dark);
     text-align: center;
     margin: 5rem 4rem 0.8rem 4rem;
 }
 .main-register__structure .div-p__size {
-    font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
     text-align: center;
     color: var(--textColor-dark);
+    margin-bottom: 3.2rem;
 }
-
+/*  */
 .register-form__container {
     display: flex;
     flex-direction: column;
     width: 36.2rem;
     height: 21.5rem;
-
+    margin: 0 5rem;
 } 
+
+.form-input__size {
+    width: 36.2rem;
+    height: 4.7rem;
+    background: #FFFFFF;
+    border-radius: 4px;
+    border: none;
+    font-family: 'Exo';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 1.05rem 1.6rem;
+
+}
+
+input:first-child {
+    margin-bottom: 1.6rem;
+} 
+
+.form-icon_eye{
+    width: 2.1rem;
+    height: 1.6rem;
+    position: absolute;
+    top: 213px;
+    left: 38rem;
+}
+.hiddenPasword {
+    display: none;
+}
+
+.form-remember_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.3rem;
+}
+.form-remember_container input {
+    margin: 0;
+}
+.checkbox-remUser {
+    width: 2rem;
+    height: 2rem;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 1);
+}
+.form-remember_container label {
+    margin-right: 28%;
+    color: var(--textColor-dark);
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+.form-remember_container p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    color: var(--primery-color);
+}
+
+.form-btn__login {
+    height: 4.7rem;
+    font-family:'Exo', sans-serif;
+    background-color: #4CC986;
+    border-radius: 6px;
+    border: none;
+    color: var(--textColor-dark);
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    margin-top: 3.7rem;
+}
+/* === end Form ===*/
+
+/* start register with social media */
+.registerNow-p {
+
+    text-align: center;
+    margin-top: 3.2rem;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    color: #FFFFFF;
+}
+
+.registerNow-p a {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    text-align: right;
+    color: #5FE19B;
+}
+
+.divisor-line_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divisor-line_container span {
+    width: 14.7rem;
+    height: 1px;
+    border: 1px solid #4A4A4C;
+
+}
+.divisor-line_container p {
+    color: #4A4A4C;
+    margin: 2.4rem 2.7rem;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+/* btn social media */
+
+.btnLogin-social-Media {
+    width: 36.2rem;
+    height: 4.7rem;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+    margin: 0 5rem;
+}
+body > main > div > div:nth-child(7) {
+    margin: 2.4rem 5rem;
+}
+
+
+.btnLogin-social-Media p {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-left: 1.2rem;
+}
