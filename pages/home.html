@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TO DO add favicon -->
+    <link rel="stylesheet" href="../css/home.css">
+    <title>Home</title>
+</head>
+<body>
+    <!-- === HEADER === -->
+   <header class="header-home">
+       <img class="header-logo_size" src="../assets/imgs/dmLogoHedear.svg" alt="Game finder imagane">
+       <nav class="header-nav_search">
+           <img src="../assets/icons/searchLogo.svg" alt="search logo nav">
+           <input type="text" placeholder="Search games...">           
+        </nav>
+        <div class="header-logOut">
+           <a href="#">Log out</a>
+           <img src="../assets/imgs/logOutHome.png" alt="image of the count">
+       </div>
+   </header> 
+   <!-- === SECTION TRENDINGS === -->
+   <section class="section-change_dm-template">
+       <div class="section-trendings">
+            <h1>New and trending</h1>
+            <p>Based on player counts and realease date</p>
+        </div>
+       <div class="section-switch">
+           <span class="section-switch__darkmode" >
+                <p>Dark mode</p>
+                <img src="../assets/icons/darkModeOn.svg" alt="">
+           </span>
+           <span class="section-switch__template">
+               <!-- <img id="thumbnailsOn" hidden src="../assets/icons/swGridTemplateOn.svg" alt=""> -->
+               <svg class="btn-thumbnail" id="thumbnailsOn" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="10" fill="#515151"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M27.5429 8.79993H13.2572C11.6792 8.79993 10.4001 10.0791 10.4001 11.6571V15.9428C10.4001 17.5207 11.6792 18.7999 13.2572 18.7999H27.5429C29.1209 18.7999 30.4001 17.5207 30.4001 15.9428V11.6571C30.4001 10.0791 29.1209 8.79993 27.5429 8.79993ZM11.8287 11.6571C11.8287 10.8681 12.4683 10.2285 13.2573 10.2285H27.543C28.3319 10.2285 28.9715 10.8681 28.9715 11.6571V15.9428C28.9715 16.7318 28.3319 17.3714 27.543 17.3714H13.2573C12.4683 17.3714 11.8287 16.7318 11.8287 15.9428V11.6571ZM13.2572 21.6571H27.5429C29.1209 21.6571 30.4001 22.9362 30.4001 24.5142V28.7999C30.4001 30.3779 29.1209 31.6571 27.5429 31.6571H13.2572C11.6792 31.6571 10.4001 30.3779 10.4001 28.7999V24.5142C10.4001 22.9362 11.6792 21.6571 13.2572 21.6571ZM11.8287 24.5141C11.8287 23.7252 12.4683 23.0856 13.2573 23.0856H27.543C28.3319 23.0856 28.9715 23.7252 28.9715 24.5141V28.7999C28.9715 29.5888 28.3319 30.2284 27.543 30.2284H13.2573C12.4683 30.2284 11.8287 29.5888 11.8287 28.7999V24.5141Z" fill="#FFFDF5"/>
+                </svg>
+                <svg class="btn-thumbnail" id="thumbnailsOff" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="10" fill="#515151"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.4001 11.8287C10.4001 11.4342 10.7199 11.1144 11.1144 11.1144H29.6859C30.0804 11.1144 30.4001 11.4342 30.4001 11.8287C30.4001 12.2232 30.0804 12.543 29.6859 12.543H11.1144C10.7199 12.543 10.4001 12.2232 10.4001 11.8287ZM27.543 15.4001H13.2573C11.6793 15.4001 10.4001 16.6793 10.4001 18.2572V22.5429C10.4001 24.1209 11.6793 25.4001 13.2573 25.4001H27.543C29.121 25.4001 30.4001 24.1209 30.4001 22.5429V18.2572C30.4001 16.6793 29.121 15.4001 27.543 15.4001ZM11.8289 18.2573C11.8289 17.4684 12.4685 16.8288 13.2574 16.8288H27.5431C28.3321 16.8288 28.9717 17.4684 28.9717 18.2573V22.5431C28.9717 23.332 28.3321 23.9716 27.5431 23.9716H13.2574C12.4685 23.9716 11.8289 23.332 11.8289 22.5431V18.2573ZM11.1144 28.2573C10.7199 28.2573 10.4001 28.5771 10.4001 28.9716C10.4001 29.3661 10.7199 29.6859 11.1144 29.6859H29.6859C30.0804 29.6859 30.4001 29.3661 30.4001 28.9716C30.4001 28.5771 30.0804 28.2573 29.6859 28.2573H11.1144Z" fill="white"/>
+                    </svg>     
+           </span>
+        </div>
+    </section>
+    <!-- ===ASIDE & MAIN === -->
+    <div class="div-container__asidemain">
+        <!-- === ASIDE === -->
+        <aside>
+            <div class="aside-div__positions">
+                <p>Home</p>
+                <p>Reviews</p>
+                <p>New Releases</p>
+            </div>
+            <div class="aside-div__positions">
+                <span class="aside-span__sections">
+                    <img src="../assets/icons/Star.svg" alt="star Icon">
+                    <p>This week</p>
+                </span>
+                <span class="aside-span__sections">
+                    <img src="../assets/icons/Calendar.svg" alt="Calendar Icon ">
+                    <p>This month</p>
+             </span>
+             <span class="aside-span__sections">
+                 <img src="../assets/icons/Clock.svg" alt="clock icon">
+                 <p>Comming soon</p>
+             </span>                   
+            </div>
+            <div class="aside-div__positions">
+                <p>Popular</p>
+                <span class="aside-span__sections">
+                <img src="../assets/icons/Search.svg" alt="search icon">
+                 <p>Last searches</p>
+             </span>
+             <span class="aside-span__sections">
+                 <img src="../assets/icons/Thumbs Up.svg" alt="like icon ">
+                 <p>Best of the year</p>
+             </span>
+            </div>
+        </aside>
+        <!-- === MAIN === -->
+        <main id="main-container" class="main-container_column">
+            <div id="item-grid" class="main-cards main-cards__big">
+                <img src="../assets/imgs/Biomutant-screenshots-gallery-08-24-2017-1.png" alt="">
+                <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.33301 3.33342C4.47967 3.33342 2.99967 4.81742 2.99967 6.62275C2.99967 8.65475 4.17567 10.8228 5.99434 12.9468C7.52234 14.7294 9.37834 16.3374 10.9997 17.6348C12.621 16.3374 14.477 14.7281 16.005 12.9468C17.8237 10.8228 18.9997 8.65342 18.9997 6.62275C18.9997 4.81742 17.5197 3.33342 15.6663 3.33342C13.813 3.33342 12.333 4.81742 12.333 6.62275C12.333 6.97638 12.1925 7.31552 11.9425 7.56556C11.6924 7.81561 11.3533 7.95609 10.9997 7.95609C10.6461 7.95609 10.3069 7.81561 10.0569 7.56556C9.80682 7.31552 9.66634 6.97638 9.66634 6.62275C9.66634 4.81742 8.18634 3.33342 6.33301 3.33342ZM10.9997 2.87875C10.4351 2.18642 9.72327 1.62865 8.91602 1.24601C8.10876 0.863371 7.22636 0.665487 6.33301 0.666754C3.03167 0.666754 0.333008 3.32009 0.333008 6.62275C0.333008 9.62409 2.02234 12.4094 3.96901 14.6814C5.94367 16.9868 8.36501 18.9721 10.181 20.3854C10.4151 20.5675 10.7031 20.6663 10.9997 20.6663C11.2962 20.6663 11.5843 20.5675 11.8183 20.3854C13.6343 18.9721 16.0557 16.9854 18.0303 14.6814C19.977 12.4094 21.6663 9.62409 21.6663 6.62275C21.6663 3.32009 18.9677 0.666754 15.6663 0.666754C13.7863 0.666754 12.101 1.52809 10.9997 2.87875Z" fill="white"/>
+                </svg>    
+                
+                <section class="section-card__information">
+                    <span class="section-card__name">
+                        <h3>Biomutant</h3>
+                        <p>#1</p>
+                    </span>
+                    <div id="bigcard-display" class="section-bigCard__display">
+                        <span class="section-card__date">
+                            <p>Release date:</p>
+                            <p>May 31, 2021</p>
+                            <div id="smallcard-icon" class="date-smallcard__icons">
+                                <img src="../assets/icons/playstation.svg" alt="">
+                                <img src="../assets/icons/xbox.svg" alt="">
+                                <img src="../assets/icons/windows.svg" alt="">
+                            </div>
+                        </span>
+                        <span class="section-card__gneres">
+                            <p>Genres:</p>
+                            <p>Action, RPG</p>
+                            <!-- <p></p> -->
+                            <div id="bigcard-icon" class="date-bigcard__icons">
+                                <img src="../assets/icons/playstation.svg" alt="">
+                                <img src="../assets/icons/xbox.svg" alt="">
+                                <img src="../assets/icons/windows.svg" alt="">
+                            </div>
+                        </span>
+                    </div>
+                    <span id="card-description" class="section-card__description">
+                        <p>Game's description goes over here: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </span>
+                </section>
+            </div>
+            <div id="item-grid" class="main-cards main-cards__big">
+                <img src="../assets/imgs/Biomutant-screenshots-gallery-08-24-2017-1.png" alt="">
+                <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.33301 3.33342C4.47967 3.33342 2.99967 4.81742 2.99967 6.62275C2.99967 8.65475 4.17567 10.8228 5.99434 12.9468C7.52234 14.7294 9.37834 16.3374 10.9997 17.6348C12.621 16.3374 14.477 14.7281 16.005 12.9468C17.8237 10.8228 18.9997 8.65342 18.9997 6.62275C18.9997 4.81742 17.5197 3.33342 15.6663 3.33342C13.813 3.33342 12.333 4.81742 12.333 6.62275C12.333 6.97638 12.1925 7.31552 11.9425 7.56556C11.6924 7.81561 11.3533 7.95609 10.9997 7.95609C10.6461 7.95609 10.3069 7.81561 10.0569 7.56556C9.80682 7.31552 9.66634 6.97638 9.66634 6.62275C9.66634 4.81742 8.18634 3.33342 6.33301 3.33342ZM10.9997 2.87875C10.4351 2.18642 9.72327 1.62865 8.91602 1.24601C8.10876 0.863371 7.22636 0.665487 6.33301 0.666754C3.03167 0.666754 0.333008 3.32009 0.333008 6.62275C0.333008 9.62409 2.02234 12.4094 3.96901 14.6814C5.94367 16.9868 8.36501 18.9721 10.181 20.3854C10.4151 20.5675 10.7031 20.6663 10.9997 20.6663C11.2962 20.6663 11.5843 20.5675 11.8183 20.3854C13.6343 18.9721 16.0557 16.9854 18.0303 14.6814C19.977 12.4094 21.6663 9.62409 21.6663 6.62275C21.6663 3.32009 18.9677 0.666754 15.6663 0.666754C13.7863 0.666754 12.101 1.52809 10.9997 2.87875Z" fill="white"/>
+                </svg>    
+                
+                <section class="section-card__information">
+                    <span class="section-card__name">
+                        <h3>Biomutant</h3>
+                        <p>#1</p>
+                    </span>
+                    <div id="bigcard-display" class="section-bigCard__display">
+                        <span class="section-card__date">
+                            <p>Release date:</p>
+                            <p>May 31, 2021</p>
+                            <div id="smallcard-icon" class="date-smallcard__icons">
+                                <img src="../assets/icons/playstation.svg" alt="">
+                                <img src="../assets/icons/xbox.svg" alt="">
+                                <img src="../assets/icons/windows.svg" alt="">
+                            </div>
+                        </span>
+                        <span class="section-card__gneres">
+                            <p>Genres:</p>
+                            <p>Action, RPG</p>
+                            <!-- <p></p> -->
+                            <div id="bigcard-icon" class="date-bigcard__icons">
+                                <img src="../assets/icons/playstation.svg" alt="">
+                                <img src="../assets/icons/xbox.svg" alt="">
+                                <img src="../assets/icons/windows.svg" alt="">
+                            </div>
+                        </span>
+                    </div>
+                    <span id="card-description" class="section-card__description">
+                        <p>Game's description goes over here: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </span>
+                </section>
+            </div>
+            
+        </main>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>
