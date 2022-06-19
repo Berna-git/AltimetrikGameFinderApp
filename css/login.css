@@ -190,6 +190,15 @@ input:first-child {
     line-height: 2.4rem;
     margin-top: 3.7rem;
 }
+/* == input validation*/
+.validation_style__err {
+    border: 1px solid #FB5F5F
+}
+.validation_style__ok {
+    border: 1px solid  #36B972
+
+
+}
 /* === end Form ===*/
 
 /* start register with social media */

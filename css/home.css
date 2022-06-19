@@ -227,16 +227,23 @@ aside > div:nth-child(1) > p:nth-child(2) {
 }
 
 .date-smallcard__icons img {
-    padding: 0 1rem;
+    margin: 0 5px;
 }
 
+.section-smallCard__display {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-cards > img {
+    height: 17.2rem;
+}
 /*= big cards =*/
 .section-bigCard__display {
     display: flex;
-    /* flex-direction: column; */
 }
 .date-smallcard__icons {
-    display: none;
+   /* margin-right: 1rem; */
 }
 
 .main-cards__big {
@@ -255,9 +262,13 @@ aside > div:nth-child(1) > p:nth-child(2) {
     line-height: 19px;
     color: #FFFFFF;
 }
+.date-bigcard__icons {
+    display: none;
+}
 .date-bigcard__icons img {
     margin: 0 1rem;
 }
+
 /* === === */
 .main-cards {
     background-color: #303030;
@@ -276,7 +287,7 @@ aside > div:nth-child(1) > p:nth-child(2) {
 }
 .section-card__description {
     width: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 
@@ -290,7 +301,7 @@ aside > div:nth-child(1) > p:nth-child(2) {
 
 .section-card__date, .section-card__gneres {
     display: grid;
-    grid-template-columns: 1.6rem 11rem 13.7rem auto;
+    grid-template-columns: 1.6rem 11rem 11.7rem auto;
     margin-bottom: 1rem;
 }
 
@@ -306,6 +317,9 @@ aside > div:nth-child(1) > p:nth-child(2) {
     font-size: 2.4rem;
     line-height: 3.2rem;
     color: var(--textColor-dark);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .section-card__date p:nth-child(1), .section-card__gneres p:nth-child(1) {
